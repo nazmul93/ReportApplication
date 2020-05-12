@@ -55,6 +55,7 @@ namespace ReportGeneration.Web
             services.AddDbContext<ReportDbContext>(options =>
                 options.UseSqlServer(connectionString, b => b.MigrationsAssembly(migrationAssemblyName)));
 
+            services.AddControllers();
             services.AddOptions();
         }
 
