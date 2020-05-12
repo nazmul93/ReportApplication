@@ -32,7 +32,7 @@ namespace ReportGeneration.Core.Services
             GetPosts(int pageIndex, int pageSize, string searchText, string sortText)
         {
             
-            var result = _postUnitOfWork.PostRepository.Get(null, null,"Comments, Votes",pageIndex,pageSize,false);
+            var result = _postUnitOfWork.PostRepository.Get(null, null,"Comments.Votes",pageIndex,pageSize,false);
             return (result.data, 0, 0);
         }
     }

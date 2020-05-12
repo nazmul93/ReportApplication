@@ -7,6 +7,7 @@ namespace ReportGeneration.Web.Models
 {
     public class PostResponse
     {
+        public int Id { get; set; }
         public string Content { get; set; }
         public string Creator { get; set; }
         public DateTime PostDate { get; set; }
